@@ -1,13 +1,12 @@
 import React, {useState} from "react";
-import Hello, {HelloProps} from "../components/Hello";
+import User, {UserProps} from "../components/User";
 import Wrapper from "../components/Wrapper";
-import User from "../components/User"
 
 const ListPage = () => {
     const [name, setName] = useState<string>("");
     const [color, setColor] = useState<string>("");
     const [isSpecial, setIsSpecial] = useState<boolean>(false);
-    const [items, setItmes] = useState<HelloProps[]>(
+    const [items, setItmes] = useState<UserProps[]>(
         [{
             name: "김의수",
             color: 'black',
@@ -29,7 +28,7 @@ const ListPage = () => {
     }
 
     const itemRegister = () => {
-        const newItem: HelloProps = {
+        const newItem: UserProps = {
             name,
             color,
             isSpecial,
@@ -45,7 +44,7 @@ const ListPage = () => {
         <>
             <Wrapper>
                 {items.map((item) => (
-                    <Hello
+                    <User
                         name={item.name}
                         color={item.color}
                         isSpecial={item.isSpecial}

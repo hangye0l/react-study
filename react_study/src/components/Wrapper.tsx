@@ -1,5 +1,4 @@
 import React from "react";
-import styles from './styles/Wrapper.module.scss'
 import styled from "styled-components";
 
 interface WrapperProps {
@@ -12,14 +11,16 @@ interface StyleDivProps {
 
 const StyleDiv = styled.div<StyleDivProps>`
     border: 2px solid ${props => props.borderColor};
-    padding: 16px;
     margin: 20px auto;
-    width: 1000px;
-`
+    width: 601px;
+    height: 401px;
+    padding: 48px 75px 49px 76px;
+    gap: 10px;
 
+`
 const Wrapper = ({children}: WrapperProps) => {
     return(
-        <StyleDiv borderColor="skyblue">
+        <StyleDiv borderColor="#00000C">
             {children}
         </StyleDiv>
     );

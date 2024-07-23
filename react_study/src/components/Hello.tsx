@@ -1,6 +1,6 @@
 import React from "react";
 
-export interface HelloProps {
+interface HelloProps {
     name: string,
     color: string,
     isSpecial: boolean

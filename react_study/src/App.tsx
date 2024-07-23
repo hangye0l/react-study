@@ -1,14 +1,15 @@
-import React from 'react';
 import './App.css';
-import ListPage from "./page/ListPage";
+import LoginPage from "./components/assignment1/LoginPage";
 
 function App() {
 
     return (
         <div className="App">
-            <ListPage/>
+            <LoginPage/>
         </div>
     );
 }
 
 export default App;
+
+
